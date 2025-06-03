@@ -1,0 +1,14 @@
+.navbar-brand img {
+      height: 40px;
+    }
+    .nav-link {
+      color: #4a4a4a !important;
+    }
+    .btn-login {
+      border: 1px solid #ddd;
+      background: #fff;
+      color: #007bff;
+    }
+    .btn-login:hover {
+      background-color: #f8f9fa;
+    }
