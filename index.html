@@ -5,29 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Navbar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+  <!-- Navbar start here -->
+<nav class="navbar navbar-expand-lg bg-white position-static py-3 shadow-xlg">
   <div class="container">
-    <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="images/logo.png" alt="Logo">
+      <img class="w-30 h-30" src="images/logo.png" alt="Logo">
     </a>
-
-    <!-- Toggle button for mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar links -->
     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link fw-medium" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link fw-medium dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
             Services
           </a>
           <ul class="dropdown-menu">
@@ -36,27 +34,43 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link fw-medium" href="#">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link fw-medium" href="#">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link fw-medium" href="#">Contact</a>
         </li>
       </ul>
-
-      <!-- Right side buttons -->
-      <div class="d-flex align-items-center gap-3">
-        <span class="text-muted small">Call us on <strong class="text-primary">020 3960 5080</strong></span>
-        <a href="#" class="btn btn-success">Get Started</a>
-        <a href="#" class="btn btn-login">
-          Login <i class="bi bi-box-arrow-in-right ms-1"></i>
-        </a>
+      <div class="d-flex align-items-center gap-4 lh-1">
+          <div class="d-flex flex-column text-end">
+            <span class="text-muted small fw-semibold " style="color: #6b6c74;">Call us on</span>
+            <a href="#" class="text-decoration-none fs-5 fw-semibold" style="color:1e6ce7;">020 3960 5080</a>
+          </div>
+        <a href="#" class="get-started btn btn-sccess text-white">Get Started</a>
+        <a href="#" class="btn btn-white shadow-lg fw-semibold px-2.5 align-items-center d-flex">
+          Login <i class="bi bi-arrow-up-right text-primary mx-2"></i>
+        </a>      
       </div>
     </div>
   </div>
 </nav>
+<!-- Slider start here -->
+ <div id="carouselExampleSlidesOnly" class="carousel slide" style="background-color: #f8f9fb;" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Header.png" class="d-block w-100" alt="header-image">
+      <div class="carousel-caption">
+        <h2 class="heading d-flex justify-content-start">We are offering <u class="tcolor"> £100 </u> to you on every referred client</h2>
+        <!-- <p>Subtext or description goes here.</p> -->
+        <!-- <a href="#" class="btn btn-primary mt-2">Learn More</a> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
