@@ -1,7 +1,4 @@
 /* Navbar Custome Css Start here */
-*.container{
-  container : mx-auto;
-}
 .navbar-brand img {
   width: 48px;
   height: 48px;
@@ -16,11 +13,12 @@
   font-family: "Roboto", sans-serif !important;
 }
 
+
+
 .cnct-head{
   font-family: "Roboto", sans-serif !important;
   color: #696e82 !important;
   font-size: 14px !important;
-
 }
 
 .cnct-sub-head{
@@ -56,9 +54,6 @@
   font-size: 18px;
   font-weight: 700 !important;
 }
-
-
-
                                  
 /* Slier custome styles starts here */
 .slide-headings{
@@ -82,13 +77,6 @@
   background-color: #f8f9fb !important;
 }
 
-/* .pos-left{
-  position: absolute;
-  top: 48%;
-  left: 18%;
-} */
-
-
 /* Main Container css Starts here */
 
 .container-text{
@@ -109,44 +97,74 @@
 }
 
 .bold{
-   color: #3f3d3d !important;
-  font-size: 1.15rem;
+   color: #4b4949 !important;
+  font-size: 1rem !important;
   font-weight: 600 !important;
 }
 
-.tearms{
+.terms{
   color: #3b94ed;
   font-weight: 600;
   font-size: 18px;
   font-family: "Mulish", sans-serif !important;   
-
+  margin-top: 30px !important;
 }
 
-/* Main body ka Cards wala section */
 
-.info-card {
-  border: 1px solid #dce8f2;
-  border-radius: 8px;
-  padding: 30px 20px;
+/* Referral-form custome css start here */
+
+.refer-fluid-bg{
+  height: auto;
+}
+
+.title{
+  color: #305481;
+  font-size: 30px;
   text-align: center;
-  background-color: #f8fbfd;
-  transition: box-shadow 0.3s ease-in-out;
-  height: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
 }
 
-.info-card:hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+.referral-caption{
+  color: #305481;
+  font-size: 25px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+
 }
 
-.info-card img {
-  width: 60px;
-  margin-bottom: 15px;
+.container-brdr{
+  border: 1px solid #b2ccf3; 
+  border-radius: 8px; 
 }
 
-.info-text {
-  color: #444;
-  font-size: 16px;
+/* Second Card section start here */
+
+.second-card-heading {
+  font-size: 25px;
+  color: #394987;
+  font-family: "Mulish", sans-serif;
 }
+
+.second-card-sub-heading {
+  font-size: 18px;
+  color: #24252b;
+  font-family: "Mulish", sans-serif;
+}
+
+/* .second-card-heading{
+  font-size: 25px;
+  color: #394987;
+  font-family: "Mulish", sans-serif;
+
+}
+
+.second-card-sub-heading{
+  font-size: 18px;
+  color: #24252b;
+  font-family: "Mulish";
+} */
+
+
 
 
 
