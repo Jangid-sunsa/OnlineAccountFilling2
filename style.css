@@ -210,34 +210,65 @@
 }
 
 /* Limited companies cards and discription custome css start here  */
-.ltd-head{
-  font-size: 22px ;
-  color: #3b74ff;
+.section-title {
+  font-size: 1.5rem;
   font-weight: 700;
   font-family: "Mulish", sans-serif;
 }
 
-.cmpny-img{
-  width: 454px;
-  height: 232px;
+.text-primary {
+  color: #3b74ff !important;
 }
 
-.trade-cmpny{
-  font-size: 22px;
-  color: #25de9a;
-  font-weight: 700;
-  font-family: "Mulish",sans-serif;
+.text-success {
+  color: #25de9a !important;
 }
 
-.ltd-paragraph{
-  font-size: 18px;
-  line-height: 35px;
+.service-item {
+  font-size: 19px; /* 18px */
+  line-height: 35px; /* approx. 35px */
+  font-weight: 500;
   color: #585d6d;
   font-family: "Mulish", sans-serif;
 }
 
+/* Optional: Reduce image size slightly on small screens */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
 
+  .service-item {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
 
+/* Case studies part custome css start here */
+.case-heading{
+  font-size: 30px;
+  color: #394987;
+  font-weight: 800;
+  font-family: "Mulish", sans-serif;
+}
+
+.case-sub-heading{
+  font-size: 18px;
+  line-height: 32px;
+  color: #63646b;
+  font-family: "Mulish", sans-serif;
+}
+
+.family{
+  font-family: "Mulish", sans-serif;
+}
+
+.case-disc{
+  font-size: 17px;
+  line-height: 32px;
+  color: #585d6d;
+  font-family: "Mulish", sans-serif;
+}
 
 
 
@@ -677,4 +708,3 @@
  */
 
 
-y
