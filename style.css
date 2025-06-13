@@ -2,6 +2,7 @@
 /* *{
   outline: red solid 2px;
 } */
+
 .navbar-brand img {
   width: 48px;
   height: 48px;
@@ -207,8 +208,7 @@
   line-height: 32px;
   color: #585d6d !important;
   font-family: "Mulish", sans-serif;
-}
-
+}                                                                                                                                                              
 /* Limited companies cards and discription custome css start here  */
 .section-title {
   font-size: 1.5rem;
@@ -270,6 +270,66 @@
   font-family: "Mulish", sans-serif;
 }
 
+/* Blogging world custome css */
+.blogging-heading{
+  font-size: 30px;
+  color: #394987;
+  font-weight: 800;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+}
+
+.blogging-subheading{
+  font-size: 17px;
+  line-height: 32px;
+  color: #585d6d;
+  font-family: "Mulish", sans-serif;
+}
+
+.blogging-pic{
+  width: 391px;
+  height: 186px;
+}
+
+.blog-first-h{
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 35px;
+  color: #6bd45a;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+
+.blog-first-sub-h{
+  font-size: 20px;
+  line-height: 5px;
+  color: #485978;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+
+.blog-discription{
+  width: 376px;
+  height: 125px;
+  font-size: 17px;
+  line-height: 32px;
+  color: #585d6d;
+  font-family: "Mulish", sans-serif;
+}
+
+/* Offer Section Custome Css Start Here */
+.offer-txt{
+  font-size: 30px;
+  line-height: 35px;
+  color: #4076e2;
+  font-family: "Mulish", sans-serif;
+}
+
+/* Footer Section Custom Css Start Here */
+.li-height{
+  line-height: 32px;
+  color: #485978;
+}
 
 
 
@@ -284,7 +344,20 @@
 
 
 
+@media (min-width: 1020px) {
+  .disc-box{
+    width: 1020px;
+  }
 
+}
+
+@media screen and (min-width: 600px) {
+  .card-body{
+    padding: 0;
+  }
+
+}
+  
 
 
 
