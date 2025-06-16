@@ -13,78 +13,88 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+   <header class="container-fluid">
   <nav class="navbar w-100 navbar-expand-lg bg-white position-static py-3 shadow-sm">
     <div class="container mx-auto">
       <a class="navbar-brand" href="#">
-        <img class="w-30 h-30" src="images/logo.png" alt="Logo">
+        <img src="images/logo.png" alt="Logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-medium dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-              Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Service 1</a></li>
-              <li><a class="dropdown-item" href="#">Service 2</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center ms-5 gap-4 lh-1">
-            <div class="d-flex flex-column text-end">
-              <span class="cnct-head text-muted small fw-bold" >Call us on</span>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="images/logo.png" alt="Logo">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body justify-content-between">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-medium dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#">Service 1</a></li>
+                <li><a class="dropdown-item" href="#">Service 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center ms-lg-5 gap-4 lh-1 mt-4 mt-lg-0">
+            <div class="d-flex flex-column text-start text-lg-end">
+              <span class="cnct-head text-muted small fw-bold">Call us on</span>
               <a href="#" class="cnct-sub-head">020 3960 5080</a>
             </div>
-          <a href="#" class="get-started btn text-white">Get Started</a>
-          <button href="#" class="btn btn-white shadow-lg fw-semibold px-3 align-items-center">
-            Login <i class="arrow bi bi-arrow-up-right text-primary mx-2 fw-bolder" style="color: #1e6ce7;"></i>
-          </button>      
+            <a href="#" class="get-started btn text-white">Get Started</a>
+            <button class="btn btn-white shadow-lg fw-semibold px-3 d-flex align-items-center">
+              Login <i class="arrow bi bi-arrow-up-right text-primary mx-2 fw-bolder"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </las>
+    </div>
   </nav>
 </header>
 
 <!-- Slider Part Start here  -->
-<section>
-  <div class="container-fluid px-0">
-    <div class="position-relative ">
-      <img src="images/Header.png" alt="Header Image" style="width: 100vw;" class="img-fluid pic">
-      <div class="container mx-auto translate-middle-y ps-3 d-flex align-items-center justify-content-sm-between" style="width: 35%; position: absolute; top: 48%; left: 15%;">
-        <!-- <div class="p-2 offset-lg-2" style="max-width: 85%; background-color: transparent;">
-        <h1 class="slide-headings mb-2" style=" color: #1e3a8a; line-height: 3rem;">
+
+<section class="container-fluid">
+    <div class="img-bg d-flex justify-content-start align-items-center">
+     <div class="textarea-disc" style="margin-left: 14.66666667%;">
+        <h1 class="slide-headings mb-2" >
             We are offering <span class="fw-semibold" style="color:#2fd07e;">£100</span> to you on every referred client
         </h1>
         <p class="mb-4 sub-slide">
             Loving the Account Filling experience? Why not share it with your friends and contacts?
         </p>
-        <button class="btn px-4 py-2 refer-btn" style="background: linear-gradient(90deg, #2fd07e 0%, #3edfa0 100%); border-radius: 2px; font-weight: 500; color: white;">Refer now</button>
-        </div> -->
+        <button class="rfr-btn btn px-4 py- refer-btn" style="background: linear-gradient(90deg, #2fd07e 0%, #3edfa0 100%); border-radius: 2px; font-weight: 500; color: white;">Refer now</button>
       </div>
+    <div class="empty d-flex" style="width:380px; height: 200px;"></div>
   </div>
 </section>
 
 <!-- Main body part start here -->
-<section>
-<div class="container-fluid">
+<section class="container-fluid">
   <div class="container mx-auto ">
-    <div class="row w-100 py-4 offset-sm-1">
+    <div class="row w-100 py-4 mbody " style="margin-left: 6.66666667%;">
       <div class="col-lg-10 ">
         <p class="container-text ">Do you know a business or organisation which would benefit from using Online Account Filing services? If yes, why not let us know and, as a gesture of thanks, <a class="anchor-color">you'll both get £50</a> if they sign up as a client.</p>
       </div>
@@ -94,49 +104,46 @@
       <p class="terms text-start">Terms & Conditions</p>
     </div>
   </div>
-</div>
-  
-<!-- Simple Cards Starts Here -->
-  <div class="container text-center mb-5">
-      <div class="row justify-content-center g-3 gx-1 offset-sm-1">
+
+    <!-- Simple Cards Starts Here -->
+    <div class="container text-center mb-5 smp-crd" style="margin-left: 14.66666667%;"> 
+        <div class="row justify-content-center g-2 gx-1">
         
-        <!-- Simple Card 1 -->
-        <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-start">
-          <div class="card card-custom">
-            <div class="card-body m-4">
-              <img src="images/Quick and Easy.png" alt="quick and easy logo" class="card-image">
-              <p style="font-size: 16px; color: #5d6d75;">Quick and easy <br> hassle-free process</p>
+          <!-- 1 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-start">
+            <div class="card card-custom">
+              <div class="card-body m-4">
+                <img src="images/Quick and Easy.png" alt="quick and easy logo" class="card-image">
+                <p style="font-size: 16px; color: #5d6d75;">Quick and easy <br> hassle-free process</p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Simple Card 2 -->
-        <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-start">
-          <div class="card card-custom">
-            <div class="card-body m-4">
-              <img src="images/OAF.png" alt="oaf logo" class="card-image">
-              <p style="font-size: 16px; color: #5d6d75;">OAF will keep you notified of your recommendation</p>
+          </div>    
+          <!-- 2 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-start">
+            <div class="card card-custom">
+              <div class="card-body m-4">
+                <img src="images/OAF.png" alt="oaf logo" class="card-image">
+                <p style="font-size: 16px; color: #5d6d75;">OAF will keep you notified of your recommendation</p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Simple Card 3 -->
-        <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-start">
-          <div class="card card-custom">
-            <div class="card-body m-4">
-              <img src="images/Referred clients.png" alt="referred clients logo" class="card-image">
-              <p style="font-size: 16px; color: #5d6d75;">£50 for you as well as the referred client</p>
+          </div>    
+          <!-- 3 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-start">
+            <div class="card card-custom">
+              <div class="card-body m-4">
+                <img src="images/Referred clients.png" alt="referred clients logo" class="card-image">
+                <p style="font-size: 16px; color: #5d6d75;">£50 for you as well as the referred client</p>
+              </div>
             </div>
           </div>
         </div>
     </div>
-  </div>
 </section>
 
 <!-- Referral form starts here -->
-  <section class="refer-fluid-bg py-5" style="background-color: #f8f9fb;">
-    <div class="container align-items-center">
-      <h2 class="text-center my-5 title">Refer a Client</h2>
+  <section class="container-fluid-bg py-5" style="background-color: #f8f9fb;">
+    <div class="container">
+      <h2 class="text-center my-4 title">Refer a Client</h2>
       <div class=" p-4 p-md-5 container-brdr mx-auto" style="max-width: 600px;">
         <h5 class="mb-3 referral-caption">Your Details</h5>
         <div class="row g-3 mb-4">
@@ -261,7 +268,7 @@
       <div class="col-lg-6 col-md-6">
         <div class="text-center px-2 px-sm-3 px-md-4 px-lg-5">
           <h2 class="fw-bold txt-disc-heading mb-3 fs-3">Online accounting services</h2>
-          <p class="txt-disc-para mb-4 fs-5 text-wrap text-break">
+          <p class="txt-disc-para mb-4 text-wrap text-break">
             We offer a host of accounting and taxation related <br> services for Limited Companies and Sole traders. This <br> makes us a one-stop shop for all your company as <br> well as personal tax related compliance matters. <br>
           </p>
           <button class="btn text-white px-4 py-2 fw-semibold" 
@@ -332,7 +339,7 @@
             <div class="rounded-circle mt-2" style="width:48px; height:48px; background-color:#e9ecf4;"></div>
             <div>
               <div class="fw-semibold mt-2 family" style="color: #485978; font-size: 17px; font-style: italic;">Johnson Waller</div>
-              <div class="mt-2 fw-bold family" style="color: #c0cbdf; font-size: 15px; font-style: italic;">Director, Renew Solutions</div>
+              <div class="mt-2 fw-semibold family" style="color: #c0cbdf; font-size: 15px; font-style: italic;">Director, Renew Solutions</div>
             </div>
           </div>
         </div>
@@ -344,8 +351,8 @@
           <div class="d-flex align-items-center gap-3 mt-4">
             <div class="rounded-circle mt-2" style="width:48px; height:48px; background-color:#e9ecf4;"></div>
             <div>
-              <div class="mt-2 fw-bold family" style="color: #485978; font-size: 17px; font-style: italic;">Johnson Waller</div>
-              <div class="mt-2 fw-bold family" style="color: #c0cbdf; font-size: 15px; font-style: italic;">Director, Renew Solutions</div>
+              <div class="mt-2 fw-semibold family" style="color: #485978; font-size: 17px; font-style: italic;">Johnson Waller</div>
+              <div class="mt-2 fw-semibold family" style="color: #c0cbdf; font-size: 15px; font-style: italic;">Director, Renew Solutions</div>
             </div>
           </div>
         </div>
@@ -364,24 +371,36 @@
         <div class="h-100 border-bottom px-3 py-3 bg-white">
           <img src="images/Payments onAccounts.png" class="img-fluid" alt="payments-on-accounts-blog1">
           <h4 class="pt-3 blog-first-h">PAYMENTS ON ACCOUNTS</h4>
-          <h5 class="py-3 blog-first-sub-h">How to make Payments on Account</h5>
-          <p class="pb-2 blog-discription">Had enough of the weather in the UK this summer, heading off somewhere warm and sunny for holiday? You are set and ready to go Or are you?</p>
+          <h5 class="py-2 fw-bold" style="font-size: 1.25rem; color: #485978; font-family: 'Mulish', sans-serif;">
+            How to make Payments on Account
+          </h5>
+          <p class="pb-2" style="font-size: 1rem; color: #585d6d; font-family: 'Mulish', sans-serif; line-height: 1.8;">
+            Had enough of the weather in the UK this summer, heading off somewhere warm and sunny for holiday? You are set and ready to go Or are you?
+          </p>
         </div>
       </div>
       <div class="col-12 col-md-4">
         <div class="h-100 border-bottom px-3 py-3 bg-white">
           <img src="images/MTD for VAT.png" class="img-fluid" alt="mdt-for-vat-blog2">
           <h4 class="pt-3 blog-first-h">MDT FOR VAT</h4>
-          <h5 class="py-3 blog-first-sub-h">Digital Revolution: MTD for VAT</h5>
-          <p class="pb-2 blog-discription" style="font-size: 16.9px;">A recent survey conducted by Quickbooks points out that over 300.000 small businesses fall into mistake thinking they`re MTD compliant companies.</p>
+          <h5 class="py-2 fw-bold" style="font-size: 1.25rem; color: #485978; font-family: 'Mulish', sans-serif;">
+            Digital Revolution: MTD for VAT
+          </h5>
+          <p class="pb-2" style="font-size: 1rem; color: #585d6d; font-family: 'Mulish', sans-serif; line-height: 1.8;">
+            A recent survey conducted by Quickbooks points out that over 300.000 small businesses fall into mistake thinking they`re MTD compliant companies.
+          </p>
         </div>
       </div>
       <div class="col-12 col-md-4">
         <div class="h-100 border-bottom px-3 py-3 bg-white">
           <img src="images/MTD for VAT.png" class="img-fluid" alt="mdt-for-vat-blog2">
           <h4 class="pt-3 blog-first-h">MDT FOR VAT</h4>
-          <h5 class="py-3 blog-first-sub-h">How to make Payments on Account </h5>
-          <p class="pb-2 blog-discription">Capital Allowance can easily be confused with a type of expense, eligible to be claimed by an organisation in return for the taxable profits.</p>
+          <h5 class="py-2 fw-bold" style="font-size: 1.25rem; color: #485978; font-family: 'Mulish', sans-serif;">
+            How to make Payments on Account
+          </h5>
+          <p class="pb-2" style="font-size: 1rem; color: #585d6d; font-family: 'Mulish', sans-serif; line-height: 1.8;">
+            Capital Allowance can easily be confused with a type of expense, eligible to be claimed by an organisation in return for the taxable profits.
+          </p>
         </div>
       </div>
     </div>
@@ -410,76 +429,81 @@
 
 <!-- Footer Section Start here -->
 <footer class="mt-5" style="height: 350px;">
-  <div class="container border-bottom ">
-    <div class="row">
-      <div class="d-flex align-items-start mt-4 gap-5">
-        <img src="images/logo.png" class="img-fluid mt-0" alt="footer-logo">
-        <div class="col">
-          <div class="fw-medium mb-3" style="color: #485978;">COMPANY</div>
-           <ul class="family li-height list-unstyled">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Pricing</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-
-        <div class="col">
-          <div class="fw-medium mb-3" style="color: #485978;">SERVICES</div>
-           <ul class="family li-height list-unstyled">
-            <li>Services</li>
-            <li>Limited Company</li>
-            <li>Sole Traders</li>
-            <li>Contractors</li>
-          </ul>
-        </div>
-
-        <div class="col">
-          <div class="fw-medium mb-3" style="color: #485978;">CONTACT</div>
-           <ul class="family li-height list-unstyled">
-            <li>Suite-B, 42-44 Bishopsgate</li>
-            <li>London EC2N 4AH</li>
-          </ul>
-        </div>
-
-        <div class="col">
-          <div class="fw-medium mb-3" style="color: #485978;">FOLLOW</div>
-           <ul class="family li-height list-unstyled">
-            <li><img src="images/Facebook Icon.png" alt="facebook-icon"> Facebook</li>
-            <li><img src="images/Twitter Icon.png" alt="twitter-icon"> Twitter</li>
-            <li><img src="images/G + Icon.png" alt="google-plus-icon">Google plus</li>
-          </ul>
-        </div>
-        
-        <div class="col">
-          <button class="btn btn-success fw-semibold" style="background:linear-gradient(90deg,#2fd07e 0%,#3edfa0 100%); border: none;">Say hello!</button>
-          <ul class="family li-height list-unstyled">
-            <li class="fs-3 fw-semibold text-primary mt-2">020 3960 5080</li>
-            <li class="text-secondary">or Request a callback</li>
-            <li class="text-secondary">Monday-Friday:09.00am-05.00pm</li>
-            <li class="fw-semibold text-primary">info@onlineaccountfilling.com</li>
-          </ul>
-
-        </div>
-      </div>
+  <div class="container border-bottom py-4">
+  <div class="row gy-4 align-items-start">
+    <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+      <img src="images/logo.png" class="img-fluid" alt="footer-logo" style="max-width: 80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="fw-medium mb-2 text-uppercase" style="color: #485978;">Company</div>
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">About Us</a></li>
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Pricing</a></li>
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
+        <li><a href="#" class="text-decoration-none text-secondary">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="fw-medium mb-2 text-uppercase" style="color: #485978;">Services</div>
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Services</a></li>
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Limited Company</a></li>
+        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Sole Traders</a></li>
+        <li><a href="#" class="text-decoration-none text-secondary">Contractors</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="fw-medium mb-2 text-uppercase" style="color: #485978;">Contact</div>
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2 text-secondary">Suite-B, 42-44 Bishopsgate</li>
+        <li class="text-secondary">London EC2N 4AH</li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="fw-medium mb-2 text-uppercase" style="color: #485978;">Follow</div>
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2 d-flex align-items-center gap-2">
+          <img src="images/Facebook Icon.png" alt="facebook-icon" style="width:24px;"> 
+          <span class="text-secondary">Facebook</span>
+        </li>
+        <li class="mb-2 d-flex align-items-center gap-2">
+          <img src="images/Twitter Icon.png" alt="twitter-icon" style="width:24px;">
+          <span class="text-secondary">Twitter</span>
+        </li>
+        <li class="d-flex align-items-center gap-2">
+          <img src="images/G + Icon.png" alt="google-plus-icon" style="width:24px;">
+          <span class="text-secondary">Google Plus</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-2">
+      <button class="btn fw-semibold w-100 mb-2 text-white" style="background:linear-gradient(90deg,#2fd07e 0%,#3edfa0 100%); border: none;">Say hello!</button>
+      <ul class="list-unstyled mb-0">
+        <li class="fs-5 fw-semibold text-primary mt-2">020 3960 5080</li>
+        <li class="text-secondary">or Request a callback</li>
+        <li class="text-secondary">Monday-Friday: 09.00am-05.00pm</li>
+        <li class="fw-semibold text-primary">info@onlineaccountfilling.com</li>
+      </ul>
     </div>
   </div>
-<section>
-<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted">
-    <div>
-      Online Account Filing Limited trading as Online Account Filing is registered in England & Wales under company registration number: 11422187<br>
-      &copy; Copyright 2019 Online Account Filing - All Rights Reserved
-    </div>
-    <div class="mt-2 mt-md-0">
-      <a href="#" class="text-muted text-decoration-none me-3">Terms</a>
-      <span class="text-muted">|</span>
-      <a href="#" class="text-muted text-decoration-none mx-3">Privacy</a>
-      <span class="text-muted">|</span>
-      <a href="#" class="text-muted text-decoration-none ms-3">Cookie Policy</a>
-    </div>
-  </div>
-</section>
+</div>
+
+    <section>
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted">
+            <div>
+              Online Account Filing Limited trading as Online Account Filing is registered in England & Wales under company registration number: 11422187<br>
+              &copy; Copyright 2019 Online Account Filing - All Rights Reserved
+            </div>
+            <div class="mt-2 mt-md-0">
+              <a href="#" class="text-muted text-decoration-none me-3">Terms</a>
+              <span class="text-muted">|</span>
+              <a href="#" class="text-muted text-decoration-none mx-3">Privacy</a>
+              <span class="text-muted">|</span>
+              <a href="#" class="text-muted text-decoration-none ms-3">Cookie Policy</a>
+            </div>
+        </div>
+    </section>
 
 </footer>
 
