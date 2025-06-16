@@ -17,27 +17,20 @@
   font-family: "Roboto", sans-serif !important;
 }
 
-
-
-.cnct-head{
+.cnct-head {
   font-family: "Roboto", sans-serif !important;
   color: #696e82 !important;
   font-size: 14px !important;
 }
 
-.cnct-sub-head{
-  font-size: 20px!important;
+.cnct-sub-head {
+  font-size: 20px !important;
   color: #1e6ce7 !important;
-  font-weight: 650!important ;
+  font-weight: 650 !important;
   text-decoration: none;
   font-family: "Roboto", sans-serif !important;
 }
 
-.call-number {
-  color: #1e6ce7 !important;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
 .get-started {
   background: linear-gradient(90deg, #2fd07e 0%, #3edfa0 100%);
   border: none;
@@ -47,26 +40,27 @@
   box-shadow: 0 2px 8px rgba(46, 213, 115, 0.08);
 }
 
-.get-started:hover{
+.get-started:hover {
   background: whitesmoke;
   border: green 2px solid !important;
   color: black !important;
 }
 
-.arrow{
-   height: 30px !important;
+.arrow {
+  height: 30px !important;
   font-size: 18px;
   font-weight: 700 !important;
 }
-                                 
+
+
 /* Slier custome styles starts here */
 .slide-headings{
   font-family: "Roboto", sans-serif;
-  font-size: 2.9rem;   
-   line-height: 2.9vw;
-   font-style: normal;
-   font-weight: 400 !important;
-   color: #0a4bb4 !important;
+  font-size: 39px;   
+  line-height: 48px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  color: #0a4bb4 !important;
 }
 
 .sub-slide{
@@ -76,16 +70,25 @@
   color: #5d6d75 !important;
 }
 
-.pic{
-  width: 100vw !important;
-  background-color: #f8f9fb !important;
+.img-bg{
+  background-image: url("images/Header.png");
+  background-color: #f8f9fb;
+  height: 468px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.textarea-disc{
+  height: 25px;
+  width: 450px;
+  min-height: 260px;
+  min-width: 250px;
 }
 
 /* Main body css Starts here */
 
 .container-text{
-  /* max-width: 100%; */
-  font-size: 0.93rem !important;
+  font-size: 15.8px !important;
   color: #939596 !important;
   line-height: 25px !important;
   letter-spacing: 0px !important;
@@ -139,7 +142,7 @@
 
 .title{
   color: #305481;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
@@ -204,7 +207,8 @@
 }
 
 .txt-disc-para{
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 32px;
   color: #585d6d !important;
   font-family: "Mulish", sans-serif;
@@ -230,18 +234,6 @@
   font-weight: 500;
   color: #585d6d;
   font-family: "Mulish", sans-serif;
-}
-
-/* Optional: Reduce image size slightly on small screens */
-@media (max-width: 576px) {
-  .section-title {
-    font-size: 1.3rem;
-  }
-
-  .service-item {
-    font-size: 1rem;
-    line-height: 1.8rem;
-  }
 }
 
 /* Case studies part custome css start here */
@@ -319,446 +311,38 @@
 
 /* Offer Section Custome Css Start Here */
 .offer-txt{
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 28px;   
+  line-height: 30px;
   color: #4076e2;
   font-family: "Mulish", sans-serif;
 }
 
 /* Footer Section Custom Css Start Here */
+.logo-gap{
+    line-height: 40px;
+}
+
 .li-height{
-  line-height: 32px;
+  line-height: 35px;
   color: #485978;
+  font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1020px) {
-  .disc-box{
-    width: 1020px;
-  }
-
-}
-
-@media screen and (min-width: 600px) {
-  .card-body{
-    padding: 0;
-  }
-
-}
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* Responsive bootstrap */
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1310px;
+        max-width: 1380px;
     }
 }
-/* @media (min-width: 1480px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1425px;
-    }
+
+/* @media (min-width: 1020px) {
+  .disc-box{
+    width: 1020px;
+  }
+
 } */
 
 @media (max-width: 991.98px) {
@@ -769,15 +353,72 @@
   }
 }
 
-/* @media(min-width: 574px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 576;
+@media (max-width: 768px) {
+  .slide-headings{
+  font-family: "Roboto", sans-serif;
+  font-size: 33px;   
+  line-height: 45px !important;
+  font-style: normal;
+  color: #0a4bb4 !important;
+  justify-content: center !important;
   }
-    .card-custome{
-      display: flex;
-      justify-content: center;
-    }
+
+  .textarea-disc{
+    margin-left: 5% !important;
+    width: 420px;
+    min-width: 200px;
+  }
+
+  .mbody{
+    margin-left: 0.666% !important;
+  }
+  
+  .smp-crd{
+    margin-left: 30px !important;
+  }
 }
- */
 
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
 
+  .service-item {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .img-bg{
+    background-image: none;
+    height: 250px !important;
+    align-items: center !important;
+  }
+
+  .empty{
+    width: 0vw !important;
+    height: 0vh !important;
+  }
+
+  .textarea-disc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10.66% !important;
+  }
+
+  .rfr-btn{
+    align-self: start;
+  }
+
+  .slide-headings{
+  font-family: "Roboto", sans-serif;
+  font-size: 23.5px;   
+  line-height: 30px !important;
+  font-style: normal;
+  color: #0a4bb4 !important;
+  justify-content: center !important;
+  }
+}
