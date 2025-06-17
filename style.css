@@ -40,12 +40,6 @@
   box-shadow: 0 2px 8px rgba(46, 213, 115, 0.08);
 }
 
-.get-started:hover {
-  background: whitesmoke;
-  border: green 2px solid !important;
-  color: black !important;
-}
-
 .arrow {
   height: 30px !important;
   font-size: 18px;
@@ -334,16 +328,59 @@
 
 @media (min-width: 1440px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1380px;
+        max-width: 1280px;
     }
 }
 
-/* @media (min-width: 1020px) {
-  .disc-box{
-    width: 1020px;
+@media (max-width: 1024px) {
+  .nav-link{
+  font-weight: 600 !important;
+  color: #585d6d !important;
+  font-size: 14px !important;
+  margin-right: 1rem !important;
+  font-family: "Roboto", sans-serif !important; 
   }
 
-} */
+  .cnct-head{
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .cnct-sub-head{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+  }
+
+  .get-started{
+    font-size: 14px !important;
+    font-weight: 500;
+  }
+
+  .arrow{
+    height: 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+
+  .textarea-disc {
+    margin-left: 11.6666% !important;
+    height: 35px !important;
+    width: 417px !important;
+    min-height: 280px !important;
+    min-width: 230px !important;
+  }
+/* 
+  .smp-crd{
+    margin-left: 10.666% !important; 
+  }
+
+  /* .card-custom{
+    width: 250px !important;
+  } */ */
+
+
+}
 
 @media (max-width: 991.98px) {
   .pos-left {
@@ -389,12 +426,29 @@
   }
 }
 
+@media (max-width: 517px) {
+  .textarea-disc {
+    height: 20px;
+    min-height: 365px;
+  }
+}
+
 @media (max-width: 425px) {
   .img-bg{
-    background-image: none;
-    height: 250px !important;
+    background-image: none !important;
+    height: 300px !important;
     align-items: center !important;
   }
+
+  .slide-headings{
+  font-family: "Roboto", sans-serif;
+  font-size: 23.5px;   
+  line-height: 30px !important;
+  font-style: normal;
+  color: #0a4bb4 !important;
+  justify-content: center !important;
+  }
+
 
   .empty{
     width: 0vw !important;
@@ -413,12 +467,8 @@
     align-self: start;
   }
 
-  .slide-headings{
-  font-family: "Roboto", sans-serif;
-  font-size: 23.5px;   
-  line-height: 30px !important;
-  font-style: normal;
-  color: #0a4bb4 !important;
-  justify-content: center !important;
+.smp-crd{
+    margin-left: 10px !important;
   }
+
 }
