@@ -50,16 +50,15 @@
 /* Slier custome styles starts here */
 .slide-headings{
   font-family: "Roboto", sans-serif;
-  font-size: 39px;   
+  font-size: 35px;   
   line-height: 48px !important;
-  font-style: normal;
   font-weight: 400 !important;
   color: #0a4bb4 !important;
 }
 
 .sub-slide{
   font-family: "Roboto", sans-serif !important;
-  font-size: 1.1rem; 
+  font-size: 16.5px; 
   font-weight: 450;
   color: #5d6d75 !important;
 }
@@ -72,12 +71,6 @@
   background-position: center;
 }
 
-.textarea-disc{
-  height: 25px;
-  width: 450px;
-  min-height: 260px;
-  min-width: 250px;
-}
 
 /* Main body css Starts here */
 
@@ -115,8 +108,9 @@
 .card-custom {
   /* width: 100%; */
   width: 310px !important;
+  text-align: center;
   height: auto;
-  max-height: 185px;
+  max-height: 180px;
   background-color: #f8f9fb;
   gap: 15px !important;
 }
@@ -332,6 +326,12 @@
     }
 }
 
+@media (max-width: 1200px) {
+  .slide-row{
+    margin-top: 50px !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .nav-link{
   font-weight: 600 !important;
@@ -363,23 +363,9 @@
     font-weight: 500 !important;
   }
 
-  .textarea-disc {
-    margin-left: 11.6666% !important;
-    height: 35px !important;
-    width: 417px !important;
-    min-height: 280px !important;
-    min-width: 230px !important;
+  .slide-row{
+    margin-top: 20px;
   }
-/* 
-  .smp-crd{
-    margin-left: 10.666% !important; 
-  }
-
-  /* .card-custom{
-    width: 250px !important;
-  } */ */
-
-
 }
 
 @media (max-width: 991.98px) {
@@ -400,18 +386,12 @@
   justify-content: center !important;
   }
 
-  .textarea-disc{
-    margin-left: 5% !important;
-    width: 420px;
-    min-width: 200px;
-  }
-
   .mbody{
     margin-left: 0.666% !important;
   }
   
-  .smp-crd{
-    margin-left: 30px !important;
+  .slide-row{
+    width: 400px !important;
   }
 }
 
@@ -449,19 +429,15 @@
   justify-content: center !important;
   }
 
+  .slide-row{
+    margin-top: 0px !important;
+  }
 
   .empty{
     width: 0vw !important;
     height: 0vh !important;
   }
 
-  .textarea-disc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10.66% !important;
-  }
 
   .rfr-btn{
     align-self: start;
